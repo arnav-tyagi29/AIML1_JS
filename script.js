@@ -62,25 +62,60 @@
 // }
 // document.write("Exiting switch block.");
 
-function myFunction() {
-  alert("Hello World!");
-}
-let btn = document.querySelector(".alert");
-btn.addEventListener("click", myFunction);
+// function myFunction() {
+//   alert("Hello World!");
+// }
+// let btn = document.querySelector(".alert");
+// btn.addEventListener("click", myFunction);
 
-function sayName(name, age) {
-  document.write(name + " is " + age + " years old");
-}
+// function sayName(name, age) {
+//   document.write(name + " is " + age + " years old");
+// }
 
-let btn2 = document.querySelector(".hello");
-btn2.addEventListener("click", () => {
-  sayName("Zara", 7);
-});
+// let btn2 = document.querySelector(".hello");
+// btn2.addEventListener("click", () => {
+//   sayName("Zara", 7);
+// });
 
-//javascript -> undefined
+// //javascript -> undefined
 
-var res = mul(12, 30);
-function mul(x, y) {
-  return x * y;
-}
-document.write(res);
+// var res = mul(12, 30);
+// function mul(x, y) {
+//   return x * y;
+// }
+// document.write(res);
+
+// // function add(a, b) {
+// //   console.log(a + b);
+// // }
+// // add(10, 20);
+
+// // var add2 = (a, b) => {
+// //   console.log(a + b);
+// // };
+// // add2(102, 20);
+
+// var add3 = (a, b) => console.log(a + b);
+// add3(30, 20);
+
+// var person = {
+//   name: "John Mac",
+//   age: 30,
+//   isMarried: true,
+//   address: {
+//     street: "vinay nagar",
+//     flatNo: 201,
+//   },
+// };
+// for (let el in person) {
+//   console.log(el + ": " + person[el]);
+// }
+
+var person2 = new Object();
+person2.name = "krishnkant";
+person2.age = 32;
+person2.isMarried = true;
+person2.address = {};
+person2.address.street = "nagar road";
+person2["address"]["flatNo"] = 33;
+console.log(person2);
