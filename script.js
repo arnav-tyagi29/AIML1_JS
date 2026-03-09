@@ -111,11 +111,59 @@
 //   console.log(el + ": " + person[el]);
 // }
 
-var person2 = new Object();
-person2.name = "krishnkant";
-person2.age = 32;
-person2.isMarried = true;
-person2.address = {};
-person2.address.street = "nagar road";
-person2["address"]["flatNo"] = 33;
-console.log(person2);
+// var person2 = new Object();
+// person2.name = "krishnkant";
+// person2.age = 32;
+// person2.isMarried = true;
+// person2.address = {};
+// person2.address.street = "nagar road";
+// person2["address"]["flatNo"] = 33;
+// console.log(person2);
+
+// var myInfo = new Array();
+// var myInfo1 = Array();
+// console.log(myInfo, myInfo1);
+
+// let collection = [
+//   {},
+//   [],
+//   true,
+//   "john",
+//   function () {},
+//   90009898193,
+//   undefined,
+//   null,
+//   new String("abc"),
+//   new Date(),
+// ];
+
+// console.log(collection);
+
+// collection.teacherName = "John Mac";
+// collection.phoneNo = 950008193;
+
+// console.log(collection);
+
+let trainerInfo = ["Arnav", 18, "Delhi", { isMarried: false }];
+
+// console.log(trainerInfo[trainerInfo.length - 1]);
+
+trainerInfo.contact = 9971660499;
+// console.log(trainerInfo);
+trainerInfo[0] = "Jitendra Kumar Chauhan";
+console.log(trainerInfo.length);
+
+// DOM elements on a webpage, enabling JavaScript to dynamically access, manipulate, and update content, enhancing interactivity, and functionality
+
+//Window Object
+
+//document object is property of windows object
+
+const result = document.getElementById("para");
+result.innerHTML = "my self";
+result.title = "myname";
+console.log(result);
+
+const result2 = document.getElementsByClassName("heading");
+result2.innerHTML = "hii";
+console.log(result2);
